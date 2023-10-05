@@ -16,7 +16,7 @@ class ParserFactory
         if(isset(self::$instance[$ext])) {
             return self:: $instance[$ext];
         }
-        $className = __NAMESPACE__ . "\\Adapter\\".$ext;
+        $className = __NAMESPACE__ . "\\Adapter\\".ucfirst($ext)."Parser";;
         
         if(class_exists($className)) {
             self::$instance[$ext] = new $className();
