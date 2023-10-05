@@ -1,0 +1,17 @@
+{
+    "name": "shenzhe/pdftotext",
+    "description": "Convert the PDF file to text, and then split it into smaller segments, making it easier to use for ChatGPT training.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Shenzhe\\Pdftotext\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "shenzhe",
+            "email": "shenzhe163@gmail.com"
+        }
+    ],
+    "require": {}
+}
