@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Shenzhe\Pdftotext;
 
-class PraseFile
+class ParseFile
 {
     private string $filename;
     private string $outputDir;

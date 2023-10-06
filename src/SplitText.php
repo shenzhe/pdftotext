@@ -28,7 +28,7 @@ class SplitText
 
     public function splitByFile(string $filePath): array
     {
-        $text = ParserFactory::create($filePath)->parse($filePath);
+        $text = (new ParseFile($filePath))->parseFile();
         return $this->split($text);
     }
 
